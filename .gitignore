@@ -5,12 +5,13 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.so
 
+# =========================
 # Virtual Environment
+# =========================
 venv/
-.env/
 .venv/
+env/
 
 # =========================
 # Jupyter Notebook
@@ -26,7 +27,6 @@ venv/
 # Environment Variables
 # =========================
 .env
-.env.*
 
 # =========================
 # Logs
@@ -40,15 +40,61 @@ venv/
 Thumbs.db
 
 # =========================
-# Python Build / Cache
+# Temporary Files
 # =========================
-build/
-dist/
-*.egg-info/
+temp/
+tmp/
 
 # =========================
-# Test / Coverage
+# Python Testing / Cache
 # =========================
 .pytest_cache/
-.coverage
-htmlcov/
+.mypy_cache/
+
+# =========================
+# Data Files
+# =========================
+
+# Ignore processed/interim datasets
+data/interim/*
+data/processed/*
+
+# Keep folder structure
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Ignore raw downloaded datasets
+data/raw/covid/*.csv
+data/raw/world_bank/*.csv
+
+# Keep folder structure
+!data/raw/covid/.gitkeep
+!data/raw/world_bank/.gitkeep
+
+# =========================
+# Reports & Outputs
+# =========================
+reports/
+outputs/
+
+# =========================
+# Model Artifacts
+# =========================
+*.pkl
+*.joblib
+*.h5
+*.pt
+
+# =========================
+# Notebook Export Files
+# =========================
+*.html
+*.pdf
+*.pptx
+
+# =========================
+# Misc
+# =========================
+coverage/
+dist/
+build/
