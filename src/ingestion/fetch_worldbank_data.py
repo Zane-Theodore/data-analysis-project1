@@ -8,7 +8,7 @@ from pathlib import Path
 
 COUNTRY_CODE = "VNM"
 
-START_YEAR = 2000
+START_YEAR = 1985
 END_YEAR = 2025
 
 # indicator_code : output_filename
@@ -44,7 +44,7 @@ def fetch_indicator(indicator_code: str, output_name: str):
         f"/indicator/{indicator_code}"
         f"?format=json"
         f"&date={START_YEAR}:{END_YEAR}"
-        f"&per_page=100"
+        f"&per_page=1000"
     )
 
     print(f"\nFetching {indicator_code} ...")
