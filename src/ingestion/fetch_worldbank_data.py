@@ -18,7 +18,7 @@ INDICATORS = {
     "SL.UEM.TOTL.ZS": "unemployment",
     "SL.TLF.TOTL.IN": "labor_force",
     "NE.EXP.GNFS.ZS": "exports_percent_gdp",
-    "BX.KLT.DINV.WD.GD.ZS": "foreign_direct_investment_percent_gdp",
+    "BX.KLT.DINV.WD.GD.ZS": "fdi_percent_gdp",
 }
 
 # ==========================================
